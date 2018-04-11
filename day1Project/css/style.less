@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #f0eff0;
+}
+.wrap{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    .header{
+        width:100%;
+        height: 380px;
+        border-bottom:1px solid #f00;
+        font-size: 50px;
+        display: flex;
+        flex-direction:column;
+        .top_list{
+            width:100%;
+            height: 150px;
+            display: flex;
+            span{
+                display: inline-block;
+                width:33%;
+                height: 150px;
+                line-height: 150px;
+                text-align: center;
+                &:nth-child(1){
+                    width:15%;
+                    height: 100%;
+                }
+                 &:nth-child(2){
+                    width:60%;
+                    height: 100%;
+                }
+                 &:nth-child(3){
+                    width:25%;
+                    height: 100%;
+                }
+            }
+        }
+        .classify_list{
+            width:100%;
+            height: 200px;
+            ul{
+                width:100%;
+                height: 100%;
+                display: flex;
+                li{
+                    width:25%;
+                    height: 100%;
+                    text-align:center;
+                    line-height: 2;
+                    p{
+                        &:first-child{
+                            display:inline-block;
+                            width:120px;
+                            height: 120px;
+                            border:1px solid #ccc;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .active{
+                    p{
+                        &:nth-child(1){
+                            background:red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section{
+        flex:1;
+        overflow-x:hidden;
+        font-size:50px;
+    }
+    .footer{
+        width:100%;
+        height: 350px;
+        border-top:1px solid #f00;
+        font-size:50px;
+        p{
+            display:inline-block;
+            width:600px;
+            height: 100px;
+            line-height: 350px;
+            margin-left:160px;
+            span{
+                display:inline-block;
+                &:nth-child(1){
+                    width:30%;
+                    height: 100px;
+                    border:2px solid #ccc;
+                    border-radius:25px;
+                    text-align:center;
+                    line-height: 100px;
+                }
+                &:nth-child(2){
+                    width:65%;
+                    height: 100px;
+                    border:2px solid #ccc;
+                    border-radius:25px;
+                    text-align:center;
+                    line-height: 100px;
+                }
+            }
+        }
+    }
+}

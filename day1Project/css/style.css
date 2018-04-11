@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #f0eff0;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .header {
+  width: 100%;
+  height: 380px;
+  border-bottom: 1px solid #f00;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .header .top_list {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+.wrap .header .top_list span {
+  display: inline-block;
+  width: 33%;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+}
+.wrap .header .top_list span:nth-child(1) {
+  width: 15%;
+  height: 100%;
+}
+.wrap .header .top_list span:nth-child(2) {
+  width: 60%;
+  height: 100%;
+}
+.wrap .header .top_list span:nth-child(3) {
+  width: 25%;
+  height: 100%;
+}
+.wrap .header .classify_list {
+  width: 100%;
+  height: 200px;
+}
+.wrap .header .classify_list ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.wrap .header .classify_list ul li {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  line-height: 2;
+}
+.wrap .header .classify_list ul li p:first-child {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.wrap .header .classify_list ul .active p:nth-child(1) {
+  background: red;
+}
+.wrap .section {
+  flex: 1;
+  overflow-x: hidden;
+  font-size: 50px;
+}
+.wrap .footer {
+  width: 100%;
+  height: 350px;
+  border-top: 1px solid #f00;
+  font-size: 50px;
+}
+.wrap .footer p {
+  display: inline-block;
+  width: 600px;
+  height: 100px;
+  line-height: 350px;
+  margin-left: 160px;
+}
+.wrap .footer p span {
+  display: inline-block;
+}
+.wrap .footer p span:nth-child(1) {
+  width: 30%;
+  height: 100px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 100px;
+}
+.wrap .footer p span:nth-child(2) {
+  width: 65%;
+  height: 100px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 100px;
+}
